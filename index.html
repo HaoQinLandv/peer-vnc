@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Peer-vnc : Access to VNC desktop from anywhere using web browser">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Peer-vnc</title>
+    <meta charset="UTF-8">
+    <title>Peer-vnc by InstantWebP2P</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Peer-vnc</h1>
+      <h2 class="project-tagline">Access to VNC desktop from anywhere using web browser</h2>
+      <a href="https://github.com/InstantWebP2P/peer-vnc" class="btn">View on GitHub</a>
+      <a href="https://github.com/InstantWebP2P/peer-vnc/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/InstantWebP2P/peer-vnc/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/InstantWebP2P/peer-vnc">View on GitHub</a>
-
-          <h1 id="project_title">Peer-vnc</h1>
-          <h2 id="project_tagline">Access to VNC desktop from anywhere using web browser</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/InstantWebP2P/peer-vnc/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/InstantWebP2P/peer-vnc/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="peer-vnc" class="anchor" href="#peer-vnc" aria-hidden="true"><span class="octicon octicon-link"></span></a>peer-vnc</h1>
 
 <h1></h1>
@@ -48,6 +36,9 @@
 <li>Proxy to multiple VNC server in single iwebpp.io client</li>
 <li>Provide end-to-end security</li>
 <li>Run over STUN session with iwebpp.io-stun-proxy</li>
+<li>Support http basic-auth</li>
+<li>Support upload file to remote server by drag and drop</li>
+<li>Support VNC fullscreen mode</li>
 </ul>
 
 <h3>
@@ -98,7 +89,7 @@ new Proxy('192.168.1.1:5900', function(err, proxyURL){
    VNC                   Proxy URL(please open it on browser)
    192.168.1.1:5900        https://af5e83731df02546.vurl.iwebpp.com:51688/vtoken/bb39fb0eb29f081e/peervnc
 
-3. use peer-vnc binary on Linux, like  ./bin/peer-vnc -t 192.168.1.1:5900 -s acl -a srv
+3. use peer-vnc binary on Linux, like  ./bin/peer-vnc -t 192.168.1.1:5900 -s acl -a srv -b user:pass -d /auto/vshare/
    VNC                   Proxy URL(please open it on browser)
    192.168.1.1:5900        https://41c522dab4ae47f9.vurl.iwebpp.com:51688/vtoken/516c97b3070de2e1/peervnc
 
@@ -111,8 +102,6 @@ new Proxy('192.168.1.1:5900', function(err, proxyURL){
 
 <ul>
 <li>donate code, bug report, test case</li>
-<li>donate coffee <a href="https://gumroad.com/l/iwebpp">https://gumroad.com/l/iwebpp</a>
-</li>
 </ul>
 
 <p><br></p>
@@ -129,18 +118,16 @@ new Proxy('192.168.1.1:5900', function(err, proxyURL){
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 
 <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Peer-vnc maintained by <a href="https://github.com/InstantWebP2P">InstantWebP2P</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/InstantWebP2P/peer-vnc">Peer-vnc</a> is maintained by <a href="https://github.com/InstantWebP2P">InstantWebP2P</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
+
